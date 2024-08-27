@@ -1,0 +1,9 @@
+Projection:
+{'name': 1, 'date': 1, 'description': 1, 'domain': 1, 'rating': 1, '_id': 0}:
+1 means the field is included in the result.
+0 means the field is excluded from the result.
+This projection ensures that only the specified fields are returned 
+in the query results, making the response lighter and more focused.
+
+To build enter followin command in root directory
+docker build -t my_python_app .
