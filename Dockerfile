@@ -5,7 +5,6 @@ FROM python:3.9-slim-buster
 WORKDIR /app
 
 # Copy the current directory contents into the container at /code
-WORKDIR /app
 
 COPY ./requirements.txt /app/requirements.txt
 
@@ -13,6 +12,11 @@ COPY ./requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 COPY . /app
+
+# Copy the current directory contents into the container at /code
+COPY app /code/app
+
+WORKDIR /code/app
 
 # Run app.py when the container launches
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
