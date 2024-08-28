@@ -5,5 +5,9 @@ Projection:
 This projection ensures that only the specified fields are returned 
 in the query results, making the response lighter and more focused.
 
-To build enter followin command in root directory
-docker build -t my_python_app .
+To create requirements.txt that is usable in format of dockerfile
+pip freeze > requirements.txt
+
+To build enter following command in root directory
+docker build -t my_docker_app .
+docker run -d --name fast-api -p 80:8080 my_docker_app
