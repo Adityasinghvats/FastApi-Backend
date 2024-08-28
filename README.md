@@ -30,6 +30,6 @@
 
    ---
    - `docker build -t my_python_app .`
-   - `docker run -d -p 80:80 my_python_app`
+   - `docker run -d --name fast_api -p 80:80 my_python_app`
    ---
 ![Screenshot 2024-08-27 182929](https://github.com/user-attachments/assets/c4c66d22-4fa6-4a1f-9d52-490d830b4bb0)
