@@ -1,35 +1,40 @@
 # FastApi-Backend
 ## To setup the project locally on your machine
-- Get started in a code editor (Preferably Pycharm)
+1. Get started in a code editor (Preferably Pycharm)
   
-  ---
-  - `git clone https://github.com/Adityasinghvats/FastApi-Backend.git`
-  ---
-- Need to setup MongoDB on local system.
-- In the root directory
+  ```sh
+  git clone https://github.com/Adityasinghvats/FastApi-Backend.git
+  ```
+2. Need to setup MongoDB on local system.
   
-  ---
-  - Open integrated terminal and run the command
-  - `pip install -r requirements.txt`
-  ---
-- Run `script.py` to parse the data to MongoDB.
-- Now run the project locally
+3. In the root directory open integrated terminal and run the command
+```sh
+pip install -r requirements.txt
+```
+
+4. Run to parse the data to MongoDB.
+ ```sh
+script.py
+ ``` 
+5. Now run the project locally
   
-   ---
-   - `cd app`
-   - `uvicorn main:app --reload`
-   ---
-- To get api docs in Swagger format
+   ```sh
+   cd app
+   uvicorn main:app --reload
+   ```
+6. To get api docs in Swagger format
    - Open the url provided by uvicron in terminal directly 
      
-     ---
-     - `http://127.0.0.1:8000/docs`
-     - `http://127.0.0.1:8000/redoc`
-     ---
-- Install Docker Desktop , then run the following command in root directory
+     ```sh
+     http://127.0.0.1:8000/docs
+     http://127.0.0.1:8000/redoc
+     ```
+7. Install Docker Desktop , then run the following command in root directory
 
-   ---
-   - `docker build -t my_python_app .`
-   - `docker run -d --name fast_api -p 80:80 my_python_app`
-   ---
+   ```sh
+   docker build -t my_python_app .
+   docker run -d --name fast_api -p 80:80 my_python_app
+   ```
+8. Demo
+   
 ![Screenshot 2024-08-27 182929](https://github.com/user-attachments/assets/c4c66d22-4fa6-4a1f-9d52-490d830b4bb0)
